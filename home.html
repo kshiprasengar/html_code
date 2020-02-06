@@ -1,0 +1,134 @@
+<!DOCKTYPE html>
+<head >
+    <h1 style="color: rgb(58, 13, 13);">WELLCOME</h1>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  /*for login*/
+      $(document).ready(function(){
+      $("#LOG").click(function(){
+      $("#IN").toggle();
+      // $("#IN").hide();
+    
+    });
+      });
+      /*$(document).ready(function(){
+      $("input").focus(function(){
+      $(this).css("background-color", "yellow");
+      });
+      $("input").blur(function(){
+      $(this).css("background-color", "green");
+      });
+      });*/
+
+      /*for moving images*/
+
+  $(document).ready(function(){
+ 
+  
+ $("#myCarousel").carousel("cycle");
+
+
+// Enable Carousel Indicators
+$(".item1").click(function(){
+ $("#myCarousel").carousel(0);
+});
+$(".item2").click(function(){
+ $("#myCarousel").carousel(1);
+});
+$(".item3").click(function(){
+ $("#myCarousel").carousel(2);
+});
+$(".item4").click(function(){
+ $("#myCarousel").carousel(3);
+});
+ 
+// Enable Carousel Controls
+$(".carousel-control-prev").click(function(){
+ $("#myCarousel").carousel("prev");
+});
+$(".carousel-control-next").click(function(){
+ $("#myCarousel").carousel("next");
+});
+});
+      </script>
+</head>
+
+<body>
+    <div style="background-image: url(bbb.jpg);">
+    <div class="cred">
+  
+      <a href="registration.html">sign-up</a>
+	<button id = "LOG" >login</button>
+  <form id = "IN" action="/action_page.php" style="display: none;">
+    <ul>
+	<li style="color: black;"> Username: <input type="text" mail="Email"><br></li>
+	<li style="color: black;"> Password: <input type="text" pass="password"></li>
+	<li><input type="submit" value="Submit"></li>
+	</form>
+    </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="homecss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 80%;
+      height: 60%;
+    }
+    </style>
+    
+		<div class="body"></div>
+<div class="container">
+  
+  
+  
+  <!-- The carousel -->
+  <div id="myCarousel" class="carousel slide mt-4" data-interval="500">
+  
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li class="item1 active"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="model.jpg" alt="theme" width="500" height="500">
+      <div class="text">Vehicle tracking</div>
+    </div>
+      <div class="carousel-item">
+      <img src="detect.jpeg" alt="hos" width="500" height="500">
+      <div class="text">Accident detection</div>
+    </div>
+    <div class="carousel-item">
+      <img src="hospital.jpg" alt="hos" width="500" height="500">
+      <div class="text">Informing nearby hospital</div>
+    </div>
+    <div class="carousel-item">
+      <img src="police.jpeg" alt="indianpolice" width="500" height="500">
+      <div class="text">Informing police station</div>
+    </div>
+  </div>  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>  
+   </div>
+  </div>
+
+</body>
+
+</html>
+    
